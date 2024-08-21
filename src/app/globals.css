@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.grid-cols-[auto_auto_auto] > *:nth-child(4),
+.grid-cols-[auto_auto_auto] > *:nth-child(10) {
+  margin-left: 2rem; 
+  background-color: red;
+}
+
+* {
+  scroll-behavior: smooth;
+}
