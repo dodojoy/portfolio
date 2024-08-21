@@ -1,5 +1,16 @@
-import { NavBar } from "@/components/organisms/NavBar";
+import { AboutSection } from "@/components/organisms/AboutSection";
+import { HeroSection } from "@/components/organisms/HeroSection";
+import "./globals.css";
+import { ProjectsSection } from "@/components/organisms/ProjectsSection";
+import { ContactSection } from "@/components/organisms/ContactSection";
 
 export default function Home() {
-  return <main className="container p-[30px] sm:p-[32px]"></main>;
+  return (
+    <>
+      <HeroSection />
+      <AboutSection />
+      <ProjectsSection />
+      <ContactSection />
+    </>
+  );
 }

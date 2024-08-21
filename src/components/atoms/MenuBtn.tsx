@@ -8,7 +8,7 @@ export const MenuBtn: React.FC<MenuBtnProps> = ({ onClick, isOpen }) => {
     <button
       onClick={onClick}
       className={`cursor-pointer h-auto ${
-        isOpen ? "self-end mt-[30px] mr-[30px] absolute top-0 right-0" : null
+        isOpen ? "self-end mt-[15px] absolute top-0 right-0" : null
       }`}
     >
       <img
