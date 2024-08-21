@@ -12,8 +12,11 @@ const dmSerifText = DM_Serif_Text({
 });
 
 export const metadata: Metadata = {
-  title: "Portfolio",
+  title: "Joyce Teodoro - Portfolio",
   description: "Portfolio by Joyce Teodoro",
+  icons: {
+    icon: "/icons/profile.svg",
+  },
 };
 
 export default function RootLayout({
