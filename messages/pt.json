@@ -1,0 +1,43 @@
+{
+  "HomePage": {
+    "title": "Olá, mundo!"
+  },
+  "Hero": {
+    "title": "oi, eu sou joyce teodoro!",
+    "subtitle": "Desenvolvedora fullstack desde 2023, focada em criar soluções web completas e inovadoras. Experiência com Node.js, React, Next.js, TypeScript e diversas integrações como Stripe, Clerk e AI.",
+    "cta": "projetos"
+  },
+  "NavBar": {
+    "home": "início",
+    "about": "sobre",
+    "projects": "projetos",
+    "contact": "contato"
+  },
+  "About": {
+    "title": "sobre",
+    "subtitle": "Sobre mim",
+    "description1": "Sou desenvolvedora full stack desde 2023. Sou apaixonada por desenvolvimento web e estou sempre em busca de novos desafios. <highlight>Combino habilidades técnicas com uma comunicação clara</highlight> para criar soluções que sejam ao mesmo tempo funcionais e esteticamente agradáveis.",
+    "description2": "Minha motivação é contribuir para o crescimento da indústria, constantemente buscando melhorar a usabilidade, acessibilidade e o desempenho das aplicações que desenvolvo. ",
+    "cta": "contato"    
+  },
+  "Projects": {
+    "title": "projetos",
+    "subtitle": "Projetos",
+    "cta": "ver mais",
+    "videoPlugin": "vídeo do plugin",
+    "videoDashboard": "vídeo do dashboard",
+    "brazu": {
+      "p1": "Na <link>Brazu</link>, atuei no desenvolvimento profissional. Eu <strong>criei e implementei as APIs de cadastro de clientes</strong>, integrei com plataformas de pagamento (<strong>Stripe</strong> e <strong>Guru</strong>), <strong>integrei com o Clerk</strong> para autenticação e <strong>desenvolvi o front dos plugins</strong> com integração ao back-end.",
+      "p2": "Este <video1>vídeo</video1> mostra o plugin em que participei do desenvolvimento e este <video2>vídeo</video2> apresenta o dashboard de clientes que desenvolvi. Além disso, também desenvolvi diversas landing pages, incluindo a página oficial da empresa."
+    },
+    "valid": {
+      "p1": "Na <valid>Valid</valid>, atuei como desenvolvedora front-end responsável por reescrever completamente o <link>Carven</link>, plataforma que viabiliza a comunicação digital na venda de veículos para revendas. O projeto foi reconstruído em <strong>React</strong>, com <strong>React Query</strong> para otimizar a integração com o back-end.",
+      "p2": "Fui responsável por definir a <strong>arquitetura do front-end</strong> (com supervisão do tech lead), <strong>estruturar o projeto do zero</strong>, conduzir a <strong>componentização</strong> e garantir a <strong>escalabilidade do código</strong>. Além disso, <strong>prototipei novas funcionalidades no Figma</strong> e contribuí ativamente em decisões de <strong>UX/UI</strong>."
+    }
+  },
+  "Contact": {
+    "title": "contato"
+  }
+}
+
+

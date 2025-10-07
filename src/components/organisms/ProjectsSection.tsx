@@ -1,27 +1,83 @@
-import { BaseButton } from "../atoms/BaseButton";
+"use client";
+
 import { Divider } from "../atoms/Divider";
 import { SectionTitle } from "../atoms/SectionTitle";
 import { Project } from "../molecules/Project";
+import { useTranslations } from "next-intl";
 
 export const ProjectsSection = () => {
+  const t = useTranslations("Projects");
   const projects = [
     {
-      title: "REBU",
-      img: "rebu.svg",
-      href: "https://github.com/dodojoy/SAP008-social-network",
-      firstParagraph:
-        "Rebu is a social network designed for lesbian women, enabling them to share experiences, stories, and interests, to connect and form new bonds.",
-      secondParagraph:
-        "Rebu was created as a creative and technological solution to the lack of inclusive spaces that are specifically made and designed for lesbian women. The goal behind this project is to provide a safe, welcoming, and affirming online space where these women can connect and interact.",
+      title: "Brazu",
+      videoUrl: "https://www.youtube.com/embed/QJ5uXRhwL20",
+      href: "https://www.brazu.io/",
+      firstParagraph: t.rich("brazu.p1", {
+        strong: (chunks) => <strong>{chunks}</strong>,
+        link: (chunks) => (
+          <a
+            className="underline"
+            href="https://www.brazu.io/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            {chunks}
+          </a>
+        ),
+      }),
+      secondParagraph: t.rich("brazu.p2", {
+        video1: (chunks) => (
+          <a
+            className="underline"
+            href="https://youtu.be/QJ5uXRhwL20"
+            target="_blank"
+            rel="noreferrer"
+          >
+            {chunks}
+          </a>
+        ),
+        video2: (chunks) => (
+          <a
+            className="underline"
+            href="https://youtu.be/nM3wn1gwj18"
+            target="_blank"
+            rel="noreferrer"
+          >
+            {chunks}
+          </a>
+        ),
+      }),
     },
     {
-      title: "BURGER QUEEN",
-      img: "burgerqueen.svg",
-      href: "https://github.com/dodojoy/SAP008-burger-queen-api-client",
-      firstParagraph:
-        "Burger Queen is a small burger restaurant that is growing and needs an interface to take orders using a tablet and send them to the kitchen so they can be prepared in an organized and efficient manner.",
-      secondParagraph:
-        "The interface should display the two menus (breakfast and the rest of the day), each with all its products. The user should be able to select which products to add, and the interface should show a summary of the order with the total cost.",
+      title: "Valid",
+      href: "https://www.carven.com.br/",
+      videoUrl: "https://www.youtube.com/embed/o9YGwW23Hao",
+      firstParagraph: t.rich("valid.p1", {
+        strong: (c) => <strong>{c}</strong>,
+        valid: (c) => (
+          <a
+            className="underline"
+            href="https://valid.com/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            {c}
+          </a>
+        ),
+        link: (c) => (
+          <a
+            className="underline"
+            href="https://www.carven.com.br/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            {c}
+          </a>
+        ),
+      }),
+      secondParagraph: t.rich("valid.p2", {
+        strong: (c) => <strong>{c}</strong>,
+      }),
     },
   ];
 
@@ -31,7 +87,7 @@ export const ProjectsSection = () => {
       className="flex items-center justify-center bg-secondary w-full py-[50px] lg:py-[70px] px-[20px]"
     >
       <div className="container flex flex-col gap-[50px] lg:gap-[80px] items-center justify-center bg-secondary w-full">
-        <SectionTitle text="projects" />
+        <SectionTitle text={t("title")} />
         <div className="flex flex-col gap-[50px] lg:gap-[80px] items-center justify-center">
           {projects.map((project, index) => (
             <>
@@ -40,7 +96,7 @@ export const ProjectsSection = () => {
                 title={project.title}
                 firstParagraph={project.firstParagraph}
                 secondParagraph={project.secondParagraph}
-                src={project.img}
+                videoUrl={project.videoUrl}
                 href={project.href}
               />
               {index < projects.length - 1 && <Divider />}

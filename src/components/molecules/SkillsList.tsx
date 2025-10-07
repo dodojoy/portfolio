@@ -6,6 +6,11 @@ export const SkillsList = () => {
     "Javascript",
     "NextJs",
     "ReactJs",
+    "NodeJs",
+    "Prisma",
+    "Stripe",
+    "Clerk",
+    "AI",
     "Material UI",
     "HTML",
     "CSS",
@@ -14,6 +19,8 @@ export const SkillsList = () => {
     "TypeScript",
     "Figma",
     "Tailwind",
+    "Bootstrap",
+    "PostgreSQL",
   ];
 
   return (

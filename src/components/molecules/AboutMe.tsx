@@ -1,13 +1,22 @@
+"use client";
+import { useTranslations } from "next-intl";
 import { Paragraph } from "../atoms/Paragraph";
 import { SubHeading } from "../atoms/SubHeading";
 
 export const AboutMe = () => {
+  const t = useTranslations("About");
   return (
     <div className="flex flex-col gap-[40px] md:gap-[60px]">
-      <SubHeading text="Know me better" />
+      <SubHeading text={t("subtitle")} />
       <div className="flex flex-col gap-[20px] md:gap-[30px]">
-        <Paragraph text="I am a passionate front-end developer dedicated to crafting amazing and scalable web experiences. My ability in clear and efficient communication enables me to collaborate effectively with multidisciplinary teams, translating complex ideas into successful projects." />
-        <Paragraph text="My motivation is to contribute to the industry's growth, constantly striving to enhance the usability, accessibility, and performance of the applications I develop. I thrive on tackling new challenges and am determined to drive the success of collaborative projects." />
+        <Paragraph
+          text={t.rich("description1", {
+            highlight: (chunks) => (
+              <mark className="bg-primary px-1 rounded-sm">{chunks}</mark>
+            ),
+          })}
+        />
+        <Paragraph text={t("description2")} />
       </div>
     </div>
   );

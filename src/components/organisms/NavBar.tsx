@@ -7,6 +7,8 @@ import { ProfileImg } from "../atoms/ProfileImg";
 import { useState, useEffect } from "react";
 import { MenuBtn } from "../atoms/MenuBtn";
 import Link from "next/link";
+import { LanguageSwitcher } from "../atoms/LanguageSwitcher";
+import { useTranslations } from "next-intl";
 
 interface NavBarProps {
   isMenuOpen: boolean;
@@ -20,6 +22,7 @@ export const NavBar: React.FC<NavBarProps> = ({
   const { width } = useWindowSize();
   const [isClient, setIsClient] = useState(false);
   const isMobile = width <= 768;
+  const t = useTranslations("NavBar");
 
   useEffect(() => {
     setIsClient(true);
@@ -58,11 +61,19 @@ export const NavBar: React.FC<NavBarProps> = ({
       {isMobile && <MenuBtn onClick={handleMenuOnClick} isOpen={isMenuOpen} />}
       {(isMenuOpen || !isMobile) && (
         <NavTextGroup>
-          {["home", "about", "projects", "contact"].map((item) => (
-            <Link href={`#${item}`} passHref key={item}>
-              <NavText text={item} listItem onClick={handleLinkClick} />
+          {[
+            { id: "home", label: t("home") },
+            { id: "about", label: t("about") },
+            { id: "projects", label: t("projects") },
+            { id: "contact", label: t("contact") },
+          ].map((item) => (
+            <Link href={`#${item.id}`} passHref key={item.id}>
+              <NavText text={item.label} listItem onClick={handleLinkClick} />
             </Link>
           ))}
+          <li>
+            <LanguageSwitcher />
+          </li>
         </NavTextGroup>
       )}
     </nav>

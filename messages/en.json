@@ -1,0 +1,43 @@
+{
+  "HomePage": {
+    "title": "Hello world!"
+  },
+  "Hero": {
+    "title": "hi, i’m joyce teodoro!",
+    "subtitle": "Front-end developer with clear and efficient communication skills, determined and focused on contributing to the growth and improvement of web development.",
+    "cta": "projects"
+  },
+  "NavBar": {
+    "home": "home",
+    "about": "about",
+    "projects": "projects",
+    "contact": "contact"
+  },
+  "About": {
+    "title": "about",
+    "subtitle": "About me",
+    "description1": "I'm a fullstack developer since 2023. I'm a passionate about web development and I'm always looking for new challenges. <highlight>I combine technical skills with clear communication</highlight>, to create solutions that are both functional and aesthetically pleasing.",
+    "description2": "My motivation is to contribute to the industry's growth, constantly striving to enhance the usability, accessibility, and performance of the applications I develop.",
+    "cta": "contact"
+  },
+  "Projects": {
+    "title": "projects",
+    "subtitle": "Projects",
+    "cta": "see more",
+    "videoPlugin": "plugin video",
+    "videoDashboard": "dashboard video",
+    "brazu": {
+      "p1": "At <link>Brazu</link>, I worked on professional development. I <strong>implemented customer registration APIs</strong>, integrated with payment platforms (<strong>Stripe</strong> and <strong>Guru</strong>), <strong>integrated Clerk</strong> for authentication, and <strong>built the plugins frontend</strong> integrated with the backend.",
+      "p2": "This <video1>video</video1> shows the plugin I helped develop and this <video2>video</video2> shows the customers dashboard I developed."
+    },
+    "valid": {
+      "p1": "At <valid>Valid</valid>, I worked as the front-end developer responsible for completely rewriting <link>Carven</link>, a platform that enables digital communication for vehicle sales between dealerships. The project was rebuilt using <strong>React</strong>, with <strong>React Query</strong> to optimize integration with the back end.",
+      "p2": "I was in charge of defining the <strong>front-end architecture</strong> (under the supervision of the tech lead), <strong>structuring the project from scratch</strong>, leading the <strong>componentization</strong> process, and ensuring <strong>code scalability</strong>. In addition, I <strong>prototyped new features in Figma</strong> and actively contributed to <strong>UX/UI</strong> decisions to enhance the user experience."
+    }
+  },
+  "Contact": {
+    "title": "contact"
+  }
+}
+
+

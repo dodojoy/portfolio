@@ -1,16 +1,5 @@
-import { AboutSection } from "@/components/organisms/AboutSection";
-import { HeroSection } from "@/components/organisms/HeroSection";
-import "./globals.css";
-import { ProjectsSection } from "@/components/organisms/ProjectsSection";
-import { ContactSection } from "@/components/organisms/ContactSection";
+import { redirect } from "next/navigation";
 
 export default function Home() {
-  return (
-    <>
-      <HeroSection />
-      <AboutSection />
-      <ProjectsSection />
-      <ContactSection />
-    </>
-  );
+  redirect("/en");
 }

@@ -1,7 +1,11 @@
+"use client";
+
+import { useTranslations } from "next-intl";
 import { ContactItem } from "../atoms/ContactItem";
 import { SectionTitle } from "../atoms/SectionTitle";
 
 export const ContactSection = () => {
+  const t = useTranslations("Contact");
   const contacts = [
     {
       img: "/icons/email.svg",
@@ -20,8 +24,11 @@ export const ContactSection = () => {
     },
   ];
   return (
-    <section id="contact" className="container mx-auto flex flex-col justify-center items-center w-full py-[50px] md:py-[80px] px-[20px] gap-[30px] gap-[80px]">
-      <SectionTitle text="Contact" />
+    <section
+      id="contact"
+      className="container mx-auto flex flex-col justify-center items-center w-full py-[50px] md:py-[80px] px-[20px] gap-[30px] gap-[80px]"
+    >
+      <SectionTitle text={t("title")} />
       <div className="flex flex-col lg:flex-row gap-[30px] lg:gap-[80px]">
         {contacts.map((contact) => (
           <ContactItem
