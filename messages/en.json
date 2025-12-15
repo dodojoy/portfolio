@@ -4,7 +4,7 @@
   },
   "Hero": {
     "title": "hi, i’m joyce teodoro!",
-    "subtitle": "Full‑stack developer since 2023, focused on building complete and innovative web solutions. Experience with Node.js, React, Next.js, TypeScript, and various integrations such as Stripe, Clerk, and AI.",
+    "subtitle": "Full‑stack developer since 2023, focused on building complete and innovative web solutions. Experience with Ruby on Rails, Hotwire, Node.js, React, Next.js, TypeScript, and various integrations such as Stripe, Clerk, and AI.",
     "cta": "projects"
   },
   "NavBar": {
@@ -33,6 +33,14 @@
     "valid": {
       "p1": "At <valid>Valid</valid>, I worked as the front-end developer responsible for completely rewriting <link>Carven</link>, a platform that enables digital communication for vehicle sales between dealerships. The project was rebuilt using <strong>React</strong>, with <strong>React Query</strong> to optimize integration with the back end.",
       "p2": "I was in charge of defining the <strong>front-end architecture</strong> (under the supervision of the tech lead), <strong>structuring the project from scratch</strong>, leading the <strong>componentization</strong> process, and ensuring <strong>code scalability</strong>. In addition, I <strong>prototyped new features in Figma</strong> and actively contributed to <strong>UX/UI</strong> decisions to enhance the user experience."
+    },
+    "bompasseio": {
+      "p1": "Digital platform connecting local commerce and tourism, where purchases made at partner establishments generate accumulable points, later redeemable for guided tours.",
+      "p2": "Includes management of businesses, tours, and points, an experiences showcase, redemption flow, and a user‑experience‑oriented interface. Technologies: <strong>Ruby</strong>, <strong>Ruby on Rails</strong>, <strong>Hotwire</strong>, <strong>Tailwind</strong>, <strong>PostgreSQL</strong>, <strong>Render</strong>, <strong>Supabase</strong>. See the <deploy>deploy</deploy>."
+    },
+    "dodo": {
+      "p1": "DODO is a task management web application that uses <strong>Artificial Intelligence</strong> to estimate task completion time, helping with daily planning and prioritization.",
+      "p2": "Built with <strong>Ruby on Rails</strong>, <strong>Hotwire</strong>, and <strong>OpenAI</strong>, the app automates time estimates and centralizes task control in a single flow. Code on <github>GitHub</github> and live <deploy>deploy</deploy>."
     }
   },
   "Contact": {

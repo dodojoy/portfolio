@@ -4,7 +4,7 @@
   },
   "Hero": {
     "title": "oi, eu sou joyce teodoro!",
-    "subtitle": "Desenvolvedora fullstack desde 2023, focada em criar soluções web completas e inovadoras. Experiência com Node.js, React, Next.js, TypeScript e diversas integrações como Stripe, Clerk e AI.",
+    "subtitle": "Desenvolvedora fullstack desde 2023, focada em criar soluções web completas e inovadoras. Experiência com Ruby on Rails, Hotwire, Node.js, React, Next.js, TypeScript e diversas integrações como Stripe, Clerk e AI.",
     "cta": "projetos"
   },
   "NavBar": {
@@ -33,6 +33,14 @@
     "valid": {
       "p1": "Na <valid>Valid</valid>, atuei como desenvolvedora front-end responsável por reescrever completamente o <link>Carven</link>, plataforma que viabiliza a comunicação digital na venda de veículos para revendas. O projeto foi reconstruído em <strong>React</strong>, com <strong>React Query</strong> para otimizar a integração com o back-end.",
       "p2": "Fui responsável por definir a <strong>arquitetura do front-end</strong> (com supervisão do tech lead), <strong>estruturar o projeto do zero</strong>, conduzir a <strong>componentização</strong> e garantir a <strong>escalabilidade do código</strong>. Além disso, <strong>prototipei novas funcionalidades no Figma</strong> e contribuí ativamente em decisões de <strong>UX/UI</strong>."
+    },
+    "bompasseio": {
+      "p1": "Plataforma digital para integração entre comércio local e turismo, onde compras realizadas em estabelecimentos parceiros geram pontuação acumulável, posteriormente resgatável por passeios turísticos.",
+      "p2": "Inclui gerenciamento de comércios, passeios e pontuação, vitrine de experiências, fluxo de resgate e interface orientada à experiência do usuário. Tecnologias: <strong>Ruby</strong>, <strong>Ruby on Rails</strong>, <strong>Hotwire</strong>, <strong>Tailwind</strong>, <strong>PostgreSQL</strong>, <strong>Render</strong>, <strong>Supabase</strong>. Veja o <deploy>deploy</deploy>."
+    },
+    "dodo": {
+      "p1": "DODO é uma aplicação web para gerenciamento de tarefas que utiliza <strong>Inteligência Artificial</strong> para estimar o tempo de conclusão das atividades, auxiliando no planejamento e priorização do trabalho diário.",
+      "p2": "Desenvolvida com <strong>Ruby on Rails</strong>, <strong>Hotwire</strong> e <strong>OpenAI</strong>, a aplicação automatiza estimativas de tempo e centraliza o controle das tarefas em um único fluxo. Código no <github>GitHub</github> e <deploy>deploy</deploy>."
     }
   },
   "Contact": {

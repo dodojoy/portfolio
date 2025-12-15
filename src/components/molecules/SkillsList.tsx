@@ -3,6 +3,10 @@ import { SubHeading } from "../atoms/SubHeading";
 
 export const SkillsList = () => {
   const skills = [
+    "Ruby",
+    "Ruby on Rails",
+    "Hotwire",
+    "Render",
     "Javascript",
     "NextJs",
     "ReactJs",

@@ -79,6 +79,62 @@ export const ProjectsSection = () => {
         strong: (c) => <strong>{c}</strong>,
       }),
     },
+    {
+      title: "Bom Passeio",
+      href: "https://bom-passeio.onrender.com/",
+      src: "/bom-passeio.png",
+      firstParagraph: t.rich("bompasseio.p1", {
+        strong: (c) => <strong>{c}</strong>,
+      }),
+      secondParagraph: t.rich("bompasseio.p2", {
+        strong: (c) => <strong>{c}</strong>,
+        deploy: (c) => (
+          <a
+            className="underline"
+            href="https://bom-passeio.onrender.com/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            {c}
+          </a>
+        ),
+      }),
+    },
+    {
+      title: "DODO List",
+      href: "https://todo-list-ewry.onrender.com/",
+      src: "/dodo-list.png",
+      firstParagraph: t.rich("dodo.p1", {
+        strong: (c) => <strong>{c}</strong>,
+      }),
+      secondParagraph: t.rich("dodo.p2", {
+        strong: (c) => <strong>{c}</strong>,
+        github: (c) => (
+          <a
+            className="underline"
+            href="https://github.com/dodojoy/todo-list"
+            target="_blank"
+            rel="noreferrer"
+          >
+            {c}
+          </a>
+        ),
+        deploy: (c) => (
+          <a
+            className="underline"
+            href="https://todo-list-ewry.onrender.com/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            {c}
+          </a>
+        ),
+      }),
+      links: [
+        { label: "GitHub", href: "https://github.com/dodojoy/todo-list" },
+        { label: "Deploy", href: "https://todo-list-ewry.onrender.com/" },
+      ],
+    },
   ];
 
   return (
@@ -96,6 +152,7 @@ export const ProjectsSection = () => {
                 title={project.title}
                 firstParagraph={project.firstParagraph}
                 secondParagraph={project.secondParagraph}
+                src={project.src}
                 videoUrl={project.videoUrl}
                 href={project.href}
               />
